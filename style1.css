@@ -1,0 +1,16 @@
+body{
+    background-color:rgb(41, 238, 189);
+    width: 300px;
+  border: 15px solid rgb(15, 235, 125);
+  border-radius: 5px;
+  padding: 50px;
+  margin-left:auto;
+  margin-right: auto;
+ 
+}
+h1{
+    color:rgb(15, 11, 11); text-align:center;
+}
+p{
+    color:white;font-size: large;
+}

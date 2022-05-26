@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="todo" ng-controller="mycontroller">
+        <h1>TODO LIST</h1>
+        <div>
+            <input type="text" placeholder="Add Task" ng-model="add">&nbsp;&nbsp;
+            <button style="background-color: rgb(30, 209, 69);" type="button" ng-click="additem()" >ADD</button>
+        </div>
+        <ul>
+            <li ng-repeat="x in items">{{x}} &nbsp;&nbsp;
+                <input style="background-color:red" type="button" ng-click="removeitem($index)" value="Delete"><br><br></li>
+        </ul>
+        <p>{{errortext}}</p>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
